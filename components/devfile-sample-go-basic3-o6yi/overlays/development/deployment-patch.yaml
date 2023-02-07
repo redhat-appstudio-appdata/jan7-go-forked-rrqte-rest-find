@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic3-o6yi
+  namespace: mreid1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c4e50bd3f9641559b462634e774d2361e4b533d52916f225ff90fcd5a4c4288d
+        name: container-image
+        resources: {}
+status: {}
