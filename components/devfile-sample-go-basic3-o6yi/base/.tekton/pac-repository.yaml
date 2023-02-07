@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: jan7-go-forked
+    appstudio.openshift.io/component: devfile-sample-go-basic3-o6yi
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-go-basic3-o6yi
+  namespace: mreid1-tenant
+spec:
+  url: https://github.com/mattreid/devfile-sample-go-basic3
